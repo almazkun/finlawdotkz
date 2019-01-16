@@ -25,57 +25,72 @@
 		<meta name="msapplication-config" content="/static/images/favicon/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-	<body>
-		<header>
-			<nav>
-				<ul>
-					<li>Your menu</li>
-				</ul>
-			</nav>
+	<style>
+		img.logo-sm {
+			height: 1.5em;
+		}
+		img.logo-md {
+			height: 5em;
+		}
+		a, a:hover {
+			color: inherit;
+		}
+		.navbar {
+			padding: inherit;
+		}
+		.jumbotron {
+			background-color: inherit;
+		}
+	</style>
+	<body class="bg-info">
+		<header class="bg-white fixed-top">
+			<nav class="container navbar navbar-expand-lg navbar-light">
 
+				<a class="nav-link text-center px-md-3" href="https://finlaw.kz">
+					<img class="logo-sm" src="https://finlaw.kz/images/logo_b.png" alt="Финансовый Адвокат">
+				</a>
+				<a class="nav-link text-center px-md-3" href="+77015950337" role="button" title="Телефон для звонков в Казахстане">
+                	<i class="fas fa-phone nav_icon"></i>
+            	</a>
+				<a class="nav-link text-center px-md-3" href="https://api.whatsapp.com/send?phone=77015950337&text=Добрый%20день!%20Интересует%20консультация%20юриста.%20" role="button" title="Напишите нам на WhatsApp">
+                	<i class="fab fa-whatsapp nav_icon"></i>
+            	</a>
 
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-					<!-- Navbar begin (sit on top) -->
-				<div class="w3-top">
-				  <div class="w3-bar w3-white w3-padding w3-card-2">
-					<a href="#home" class="w3-bar-item w3-button"><b><img src="/static/images/logo_b.png" alt="Финансовый Адвокат" style="height:25px;"> Финансовый Адвокат</b></a>
-					<!-- Float links to the right. Hide them on small screens -->
-					<div class="w3-right w3-hide-small">
-					 <div class="w3-right w3-hide-small" style="text-align: center;">
-						<li class="w3-ul w3-hover-pale-red">
-
-						<a href=tel:+77272297227 style="text-decoration: none; text-align: center;">+7&nbsp;727&nbsp;229&nbsp;7227</a>
-
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">О нас</a>
 						</li>
-						<li class="w3-ul w3-hover-pale-red">
-
-						<a href=tel:+77015950337 style="text-decoration: none; text-align: center;">+7&nbsp;701&nbsp;595&nbsp;0337</a>
-
+						<li class="nav-item">
+							<a class="nav-link" href="#">Услуги</a>
 						</li>
-						<li class="w3-ul w3-hover-pale-red"><a href="mailto:aze@finlaw.kz" style="text-decoration: none; text-align: center;">aze@finlaw.kz</a></li>
-						</div>
-					  <a href="#services" class="w3-bar-item w3-button">УСЛУГИ</a>
-					  <a href="#about" class="w3-bar-item w3-button">НАША КОМАНДА</a>
-					  <a href="#contact" class="w3-bar-item w3-button">КОНТАКТЫ</a>
-					</div>
-				  </div>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Контакты</a>
+						</li>
+					</ul>
 				</div>
-				<!-- Navbar end (sit on top) -->
-
-
-
+			</nav>
 		</header>
 
 
-		<main>
-			<section>
-				<header id="home" class="bgimg-1 w3-display-container">
-					<div class="w3-display-middle w3-padding" style="white-space:nowrap;">
-						<h1 class="w3-center w3-padding-large w3-black w3-xlarge w3-animate-opacity"><span class="w3-padding w3-black w3-opacity-min"><img src="/images/logo_b.png" alt="Финансовый Адвокат" style="height:50px; padding-right:23px; margin: 5px 0px 5px 0px;"><br/>Финансовый&nbsp;Адвокат</span><br/>
-						<span class="w3-hide-small w3-text-light-grey">Юридическая компания</span></h1>
+		<main class="my-5">
+			<section class="container">
+				<div class="jumbotron">
+					<div class="text-center">
+						<div class="bg-dark p-3">
+							<img class="logo-md" src="https://finlaw.kz/images/logo_b.png" alt="Финансовый Адвокат">
+							<h1 class="display-4 text-light">
+								Юридическая компания<br/>
+								<strong>Финансовый&nbsp;Адвокат</strong>
+							</h1>
+						</div>
+						<hr/>
 
 						<h2 class="w3-center w3-text-light-grey">Услуги Адвоката и Юриста</h2>
-
 						<h2 class="w3-center w3-text-light-grey">Звоните:<br/>
 							<button class="w3-btn w3-button w3-hover-pale-red w3-text-light-grey w3-hover-text-black">
 								<a href=tel:+77272297227 style="text-decoration: none; text-align: center;">+7&nbsp;727&nbsp;229&nbsp;7227</a>
@@ -84,6 +99,17 @@
 								<a href=tel:+77015950337 style="text-decoration: none; text-align: center;">+7&nbsp;701&nbsp;595&nbsp;0337</a>
 							</button>
 						</h2>
+					</div>
+				</div>
+
+
+				<header id="home" class="bgimg-1 w3-display-container">
+					<div class="w3-display-middle w3-padding" style="white-space:nowrap;">
+
+
+
+
+
 					</div>
 				</header>
 			</section>
@@ -272,5 +298,10 @@
 		var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
 		<!-- {/literal} END JIVOSITE CODE -->
 
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>
