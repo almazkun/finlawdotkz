@@ -29,20 +29,74 @@
 		img.logo-sm {
 			height: 1.5em;
 		}
+
 		img.logo-md {
 			height: 5em;
 		}
+
 		a, a:hover {
 			color: inherit;
 		}
+
 		.navbar {
 			padding: inherit;
 		}
+
 		.jumbotron {
 			background-color: inherit;
+			margin-bottom:0;
+		}
+
+		.display-5 {
+			font-size: 3em;
+			font-weight: 300;
+		}
+
+		.bold {
+			font-weight: 600;
+		}
+
+		#intro {
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('https://finlaw.kz/images/p.jpg');
+			min-height: 100%;
+		}
+
+		@media only screen and (max-device-width: 1024px) {
+    		#intro {
+        		background-attachment: scroll;
+    		}
+		}
+
+		.bg-black {
+			background-color: #050500;
+		}
+
+		.btn-block {
+			display: -webkit-flex;
+			-webkit-align-items: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn {
+			max-width: 200px;
+			border-radius: 50px;
+		}
+
+		.c-btn-wide {
+			width: 100%;
+			margin:  0.25rem;
+		}
+		.card-icon {
+			font-size: 4em;
 		}
 	</style>
-	<body class="bg-info">
+	<body>
 		<header class="bg-white fixed-top">
 			<nav class="container navbar navbar-expand-lg navbar-light">
 
@@ -77,46 +131,78 @@
 		</header>
 
 
-		<main class="my-5">
-			<section class="container">
-				<div class="jumbotron">
+		<main class="mt-4">
+			<section id="intro">
+				<div class="container jumbotron">
 					<div class="text-center">
 						<div class="bg-dark p-3">
 							<img class="logo-md" src="https://finlaw.kz/images/logo_b.png" alt="Финансовый Адвокат">
-							<h1 class="display-4 text-light">
+							<h1 class="display-5 text-light">
 								Юридическая компания<br/>
-								<strong>Финансовый&nbsp;Адвокат</strong>
+								<strong>Финансовый Адвокат</strong>
 							</h1>
 						</div>
 						<hr/>
 
-						<h2 class="w3-center w3-text-light-grey">Услуги Адвоката и Юриста</h2>
-						<h2 class="w3-center w3-text-light-grey">Звоните:<br/>
-							<button class="w3-btn w3-button w3-hover-pale-red w3-text-light-grey w3-hover-text-black">
-								<a href=tel:+77272297227 style="text-decoration: none; text-align: center;">+7&nbsp;727&nbsp;229&nbsp;7227</a>
-							</button><br/>
-							<button class="w3-btn w3-hover-pale-red w3-text-light-grey w3-hover-text-black">
-								<a href=tel:+77015950337 style="text-decoration: none; text-align: center;">+7&nbsp;701&nbsp;595&nbsp;0337</a>
-							</button>
-						</h2>
+						<h2 class="text-light">Услуги Адвоката и Юриста</h2>
+
+						<div class="btn-block my-4">
+							<a class="btn c-btn-wide border-info bg-light text-info" href="+77015950337" role="button" title="Телефон для звонков в Казахстане">
+								<i class="fas fa-phone nav_icon"></i>  Позвонить
+							</a>
+
+							<a class="btn c-btn-wide bg-info text-light" href="https://api.whatsapp.com/send?phone=77015950337&text=Добрый%20день!%20Интересует%20консультация%20юриста.%20" role="button" title="Напишите нам на WhatsApp">
+								<i class="fab fa-whatsapp nav_icon"></i> Написать
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="bg-info">
+				<div class="container py-4">
+					<h3 class="lead">Преимущества нашей компании:</h3>
+					<div class="card-group">
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="card-icon">
+									450+
+								</div>
+								<h4 class="card-title">Card title</h4>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="card-icon">
+									Featured
+								</div>
+								<h4 class="card-title">Card title</h4>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="card-icon">
+									Featured
+								</div>
+								<h4 class="card-title">Card title</h4>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body p-3 text-center">
+								<div class="card-icon">
+									Featured
+								</div>
+								<h4 class="card-title">Card title</h4>
+							</div>
+						</div>
 					</div>
 				</div>
 
 
-				<header id="home" class="bgimg-1 w3-display-container">
-					<div class="w3-display-middle w3-padding" style="white-space:nowrap;">
 
-
-
-
-
-					</div>
-				</header>
-			</section>
-
-			<section>
 				<!-- About begin -->
-				<div class="w3-container" id="about">
+				<div class="w3-container">
 				<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">НАША КОМАНДА</h3>
 				<h4>Специалисты высшего уровня квалификаций.</h4>
 					<div class="w3-row-padding w3-grayscale">
